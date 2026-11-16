@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Basha Vhara Koto",
+    "slug": "basha-vhara-koto",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#006A4E",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bashaVharaKoto.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Basha Vhara Koto needs camera access to capture photos for your listing and KYC (identity verification).",
+        "NSPhotoLibraryUsageDescription": "Basha Vhara Koto needs photo library access to upload images for your listing and profile.",
+        "NSLocationWhenInUseUsageDescription": "Basha Vhara Koto needs your location to show nearby rental listings.",
+        "NSFaceIDUsageDescription": "Basha Vhara Koto uses Face ID to securely unlock the app."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#006A4E"
+      },
+      "package": "com.bashaVharaKoto.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "USE_BIOMETRIC"
+      ]
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-image-picker",
+      "expo-local-authentication",
+      "expo-notifications",
+      "expo-secure-store"
+    ],
+    "scheme": "bashaVharaKoto"
+  }
+}
